@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "lib/variables";
+@import "lib/header";
+@import "lib/navbar";
+@import "lib/carousel";
+@import "lib/featuredBox";
+@import "lib/aboutUs";
+@import "lib/services";
+@import "lib/staff";
+@import "lib/testimonials";
+@import "lib/gallery";
+@import "lib/blog";
+@import "lib/callToAction";
+@import "lib/whyChooseUs";
+@import "lib/achievement";
+@import "lib/footer";
+@import "lib/AboutUs/header";
+@import "lib/AboutUs/navbar";
+@import "lib/AboutUs/breadcrumb";
+@import "lib/AboutUs/welcome";
+@import "lib/AboutUs/formSection";
+@import "lib/Services/services";
+@import "lib/404/error";
+@import "lib/Blog/blog";
+@import "lib/Contact/iframe";
+@import "lib/responsive";

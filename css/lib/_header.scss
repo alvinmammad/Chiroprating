@@ -1,0 +1,118 @@
+
+#header{
+    background-color: #f2963f;
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.left-topbar{
+    
+    .left-ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .e-em{
+            &:hover{
+                color: #7fc540;
+            }
+        }
+
+        li{
+            margin-right: 30px;
+            color: #fff;
+            line-height: normal;
+            font-size: 0.875rem;
+            a{
+                color: white;
+                padding: 0;
+                line-height: normal;
+                font-size: 0.875rem;
+                text-align: center;
+                text-decoration: none;
+                text
+                &:hover{
+                    color: #7fc540;
+                }
+                i{
+                    margin-right: 6px;
+                    font-weight:400;
+                }
+            }
+        }
+    }
+}
+
+
+
+.right-topbar{
+   
+
+    .social{
+
+        a{
+            text-decoration-color: transparent;
+        }
+        p{
+            margin-bottom: 0px!important;
+            i{
+                margin: 0px 20px;
+                color: white;
+                &:hover{
+                    color: #7fc540;
+                }
+            }
+        }
+        .right-ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            li{
+                padding: 0px 16px;
+
+                a{
+                    padding: 0;
+                    text-decoration: none;
+                    color: white;
+
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    &::after{
+        content:'';
+        clear: both;
+    }
+}
+// Responsive design of Header section
+
+
+@media screen and (max-width:767px){
+    .left-topbar{
+        .left-ul{
+            li{
+                width: 100%;
+                margin-top: 6px;
+                a{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .social p {
+        margin-top:20px;
+        text-align: center;
+    }
+}

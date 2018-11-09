@@ -1,0 +1,58 @@
+#error{
+    position: relative;
+    background-color: #f8f8f8;
+    z-index: 0;
+    padding-top: 105px;
+    padding-bottom: 105px;
+
+    h2{
+        margin-bottom: 20px;
+        color: #f2963f;
+        font-size: 3rem;
+        font-family: 'Nunito', serif;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p{
+        margin-bottom: 20px;
+        font-size: 1rem;
+        color: #777777;
+        text-align: center;
+    }
+
+    a{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        text-align: center;
+        position: relative;
+        left: 50%;
+
+        i{
+            margin-bottom: 20px;
+            color: #f2963f;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    .input-group{
+        position: relative;
+        left: 10%;
+
+        .input-group-field{
+            width: 65%;
+        }
+
+        .button{
+            width: 100px;
+            height: 45px;
+            background: #f2963f;
+            border: none;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            
+        }
+    }
+}

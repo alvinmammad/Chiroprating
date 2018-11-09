@@ -1,0 +1,205 @@
+#staff{
+    padding-top: 150px;
+}
+
+.staff-title{
+    position: relative;
+    display: block;
+    max-width: 52rem;
+    margin: auto;
+    margin-bottom: 65px;
+    padding-top: 4px;
+    text-align: center;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+
+    h2{
+        position: relative;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: 'Nunito', serif;
+
+        span{
+            position: relative;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #f2963f;
+            font-family: 'Nunito', serif;
+        }
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .staff-icon{
+        position: relative;
+        margin-bottom: 19px;
+
+        &::after{
+            content: '';
+            margin-left: 36%;
+            border-bottom: 1px solid #777777;
+            width: 80px;
+            
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+        }
+        &::before{
+            content: '';
+            border-bottom: 1px solid #777777;
+            width: 80px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-right: 36%;
+        }
+
+        .staff-radius{
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #f2963f;
+            margin: auto;
+            text-align: center;
+            z-index: 999;
+        }
+    }
+}
+
+
+
+    .staff-hover{
+        margin-bottom: 20px;
+        border-radius: 100%;
+        position: relative;
+        z-index: 0;
+        &:hover{
+            .hover-info ,.staff-detail{
+                opacity:1;
+                cursor: pointer;
+                
+            }
+        }
+
+
+        .btn{
+            background-color: #7fc540;
+            color: #fff;
+            font-size: 0.875rem;
+            border-radius: 10px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            border-color: transparent;
+            transition: all .4s ease;
+
+            &:hover{
+                background: #f2963f;
+                transition: all .4s ease;
+            }
+
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        img{
+            background: #949597;
+            width: 100%;
+            height: auto;
+            border-radius: 100%;
+        }
+            .staff-text{
+                text-align: center;
+        
+                h6{
+                    font-family: 'Nunito', serif;
+                    font-weight: 700;
+                    color: #444444;
+                    line-height: normal;
+        
+                    a{
+                        font-family: 'Nunito', serif;
+                        font-weight: 700;
+                        color: #444444;
+                        line-height: normal;
+                        text-decoration: none;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+        
+                p{
+                    line-height: normal;
+                    margin-bottom: 0;
+                    color: #f2963f;
+                }
+            }
+        
+    }
+    .menu{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+
+            a{
+                margin-bottom: 0;
+                line-height: 1;
+                text-decoration: none;
+                display: block;
+                padding: .7rem 1rem;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                color: #7fc540;
+                font-size: 0.9375rem;
+                transition: all .4s ease;
+
+                &:hover{
+                    color: #f2963f;
+                    transition: all .4s ease;
+                }
+            }
+        }
+    }
+    
+
+
+
+
+
+// .staff-detail{
+//     opacity: 0;
+
+//     ul{
+//        opacity: 0;   
+//    }
+// }
+
+.hover-info{
+    position: absolute;
+    border-radius: 100%;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    background-color: rgba(148, 149, 151, 0.9);
+    transition: opacity .6s;
+}

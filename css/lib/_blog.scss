@@ -1,0 +1,127 @@
+#blog{
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    .blog-title{
+        p{
+            padding: 0px 290px; 
+        }
+    }
+    h2{
+        position: relative;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+        text-align: center;
+        
+    }
+
+    .blog-icon{
+        position: relative;
+        margin-bottom: 19px;
+
+        &::after{
+            content: '';
+            margin-left: 41%;
+            border-bottom: 1px solid #777777;
+            width: 80px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+        }
+        &::before{
+            content: '';
+            border-bottom: 1px solid #777777;
+            width: 80px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-right: 41%;
+        }
+
+        .blog-icon-circle{
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #f2963f;
+            margin: auto;
+            text-align: center;
+            z-index: 999;
+        }
+    }
+
+    img{
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .post-text{
+        text-align: center;
+        padding: 30px 30px;
+        position: relative;
+
+        &::before{
+            content: "";
+            background: rgba(25, 246, 251, 0.90);
+            position: absolute;
+           
+        }
+
+      
+
+        h2{
+            margin-bottom: 20px;
+            font-family: 'Nunito', serif;
+            font-weight: 700;
+            
+            line-height: normal;
+
+            
+
+            a{
+                color: #444444;
+                font-size: 1.625rem;
+                letter-spacing: 0.05em;
+                text-decoration: none;
+                &:hover{
+                    color: #f2963f;
+                }
+                
+            }
+        }
+
+        .meta-tags{
+            font-family: 'Lato', sans-serif;
+            color: #f2963f;
+            margin-bottom: 16px;
+
+            p{
+                line-height: inherit;
+            }
+        }
+
+        .btn-primary{
+            background-color: #f2963f;
+            color: #fff;
+            border-radius:10px;
+            border-color: transparent;
+
+            &:hover{
+                background: #7fc540;
+            }
+        }
+    }
+}

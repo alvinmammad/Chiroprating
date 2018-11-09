@@ -1,0 +1,56 @@
+#welcome{
+    position: relative;
+    z-index: 5;
+    .welcome-text{
+        padding-top: 150px;
+        h2{
+            font-family: 'Nunito', serif;
+            font-weight: 700;
+            color: #444444;
+            line-height: normal;
+        }
+
+        p{
+            margin-bottom: 40px;
+        }
+
+        .info{
+
+            margin-top: 25px;
+
+            &::after{
+                content: '';
+                clear: both;
+            }
+            img{
+                margin-right: 15px;
+                float: left;
+            }
+            h3{
+                font-family: 'Nunito', serif;
+                font-weight: 700;
+                color: #444444;
+                line-height: normal;
+                font-size: 1.375rem;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 1rem;
+                color: #777777;
+            }
+        }
+       
+    }
+
+    .welcome-img{
+        width: auto;
+        display: block;
+        height: 100%;
+
+        img{
+            position: absolute;
+            bottom: 0px;
+            z-index: 2;
+        }
+    }
+}

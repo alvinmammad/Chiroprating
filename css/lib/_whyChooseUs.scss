@@ -1,0 +1,145 @@
+.section-title{
+    position: relative;
+    display: block;
+    max-width: 52rem;
+    margin: auto;
+    margin-bottom: 65px;
+    padding-top: 4px;
+    text-align: center;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    padding-top: 100px;
+h2{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+span{
+    color: #f2963f;
+}    
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}    
+.choose-icon{
+    position: relative;
+    margin-bottom: 19px;
+
+    &::after{
+        content: '';
+        margin-left: 41%;
+        border-bottom: 1px solid #777777;
+        width: 80px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    &::before{
+        content: '';
+        border-bottom: 1px solid #777777;
+        width: 80px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-right: 41%;
+    }
+.choose-icon-circle{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #f2963f;
+    margin: auto;
+    text-align: center;
+    z-index: 999;
+}    
+}
+}
+
+.video{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    z-index:0;
+
+    .video-text{
+        position: relative;
+        bottom: 0;
+        background-color: rgba(68, 68, 68, 0.77);
+        width: 106.5%;
+        display: block;
+        padding: 14px 26px;
+        top: -93px;
+        left: 0;
+        z-index: 1;
+        float: left;
+        text-align:center;
+
+        h2{
+            font-size: 0.8125rem;
+            color: #FFFFFF;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            strong{
+                display: block;
+                margin-top: 3px;
+                color: white;
+
+                span{
+                    color: #7fc540;
+                }
+            }
+        }
+    }
+}
+
+.accordion {
+    width: 570px;
+    height: 60px;
+    position: relative;
+    transform: translate(50px,26px);
+    transition: all .3s ease;
+    
+    &:hover{
+            
+            transition: all .3s ease;
+        }
+    .item {
+       
+
+        
+        margin-bottom: 5px;
+        .title {
+            padding: 10px;
+            background: #777777;
+            color: white;
+    
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            &:hover{
+                background: #f2963f;
+            }
+        }
+        .content {
+            max-height: 0;
+            overflow-y: hidden;
+            // display: none;
+            transition: all 0.5s;
+        }
+    }
+}
+
+ 
+
+ 
+
+ 

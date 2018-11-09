@@ -1,0 +1,94 @@
+.gallery-title{
+    position: relative;
+    display: block;
+    max-width: 52rem;
+    margin: auto;
+    margin-bottom: 65px;
+    padding-top: 4px;
+    text-align: center;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    padding-top: 60px;
+
+    h2{
+        position: relative;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        span{
+            position: relative;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #f2963f;
+        }
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .title-icon{
+        position: relative;
+        margin-bottom: 19px;
+
+
+        .title-icon-circle{
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #f2963f;
+            margin: auto;
+            text-align: center;
+            z-index: 999;
+
+            &::after{
+                content: '';
+                margin-left: 36%;
+                border-bottom: 1px solid #777777;
+                width: 80px;
+                position: absolute;
+                top: 50%;
+                left: 35px;
+                right: 0;
+            }
+            &::before{
+                content: '';
+                border-bottom: 1px solid #777777;
+                width: 80px;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 35px;
+                margin-right: 36%;
+            }
+        }
+
+       
+    }
+}
+
+.gallery-photos {
+    height:100%;
+    width:100%;
+    // overflow: hidden;
+
+    .gallery-parents{
+        display: flex;
+        font-size: 0;
+        flex-wrap:wrap;
+        margin:-10px 0 0 -10px;
+
+        .child {
+            display: inline-block;
+            margin: 10px -8px 1px 15px;
+            height: 210px;
+            width: calc(100% * (1/4) - 10px - 1px);
+        }
+    }
+}
+

@@ -1,0 +1,166 @@
+
+.logo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    
+    top: 5px;
+
+    a{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #7fc540;
+        font-size: 0.9375rem;
+
+        img{
+            border:0;
+        }
+    }
+}
+
+.nav-link{
+    font-family: 'Nunito', sans-serif;
+
+    &::after{
+        display: none;
+    }
+}
+
+// .container-fluid{
+//     padding: 0;
+//     // overflow: hidden;
+// }
+
+#navbar{
+    position: absolute;
+    z-index: 24;
+    
+     a{
+        color: #FFFFFF;
+        font-family: 'Nunito', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding: 9px 18px;
+        font-size: 0.875rem;
+        font-weight: 700;
+     }
+     .show{
+         background: #777777;;
+         
+         .dropdown-item{
+             color: #7fc540;
+         }
+     }
+}
+
+.slide-text{
+    text-align: center;
+     padding: 260px 150px; 
+    z-index: 99999;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+
+    h2{
+        font-size: 6.875rem;
+        font-weight: 700;
+        margin: auto;
+        color: #fff;
+        text-transform: capitalize;
+        margin-top: 66px;
+        margin-bottom: 10px;
+        font-family: 'Nunito', sans-serif;
+
+    }
+
+    p{
+        color: white;
+        max-width: 1040px;
+        margin: auto;
+        line-height: normal;
+        font-size: 1.25rem;
+        letter-spacing: 0.05em;
+        padding: 0px 160px;
+        margin-bottom: 30px;
+        font-family: 'Nunito', sans-serif;
+
+    }
+    
+
+    a{
+        padding: 15px 30px;
+        border-radius: 10px;
+        margin-bottom: 0;
+        background-color: #f2963f;
+        color: #fff;
+        border: none;
+        font-family: 'Nunito', sans-serif;
+
+        &:hover{
+            background:#7fc540;
+        }
+
+    }
+    
+}
+.overlay{
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
+    left: 0;
+}
+
+#carousel{
+    position: relative;
+    z-index: 5;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    body{
+    //    overflow: hidden; 
+        width: 100%;
+    }
+
+    .dropdown-item{
+        position: relative;
+        right: 350px;
+    }
+}
+@media screen and (max-width:767px){
+    body{
+        // overflow: hidden;
+        width: 100%;
+    }
+
+    .dropdown-item{
+        position: relative;
+        right: 350px;
+    }
+    .navbar-toggler{
+        position: relative;
+        // overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 39.9375em){
+
+body{
+    // overflow: hidden;
+    width: 100%;
+}
+.logo {
+    text-align: center;
+}
+
+.dropdown-item{
+    position: relative;
+    right: 350px;
+}
+}

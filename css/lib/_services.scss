@@ -1,0 +1,136 @@
+#services{
+    background: #444444;
+    position: relative;
+    z-index: 0;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    width: 100%;
+    height:100%;
+    margin-top: 130px;
+
+    .services{
+        position: relative;
+        display: block;
+        max-width: 52rem;
+        margin: auto;
+        margin-bottom: 65px;
+        padding-top: 4px;
+        text-align: center;
+        padding-right: .9375rem;
+        padding-left: .9375rem;
+
+        h2{
+            color: #fff;
+             span{
+                position: relative;
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: #f2963f;
+             }
+        }
+
+        p{
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+
+        }
+
+        .services-circle{
+            position: relative;
+            margin-bottom: 19px;
+
+            &::after{
+                content: '';
+                margin-left: 36%;
+                border-bottom: 1px solid #777777;
+                width: 80px;
+                
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+            }
+            &::before{
+                content: '';
+                border-bottom: 1px solid #777777;
+                width: 80px;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin-right: 36%;
+            }
+
+           
+
+            .the-circle{
+                position: relative;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: #f2963f;
+                margin: auto;
+                text-align: center;
+                z-index: 999;
+
+               
+            }
+        }
+    }
+
+    .service-box{
+        margin: 0;
+        padding: 0;
+
+        .service-img{
+            margin: 0;
+            padding: 0;
+
+            img{
+                margin-bottom: 20px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .service-text{
+        text-align: center;
+        padding: 0px 30px;
+
+        h3{
+            margin-bottom: 18px;
+            font-family: 'Nunito', serif;
+            font-weight: 700;
+            color: #444444;
+            line-height: normal;
+
+            a{
+                color: #FFFFFF;
+                font-family: 'Nunito', serif;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        p{
+            margin-bottom: 18px;
+            color: #fff;
+        }
+
+        .btn-primary{
+            background-color: #f2963f;
+            color: #fff;
+            border-color: transparent;
+
+            &:hover{
+                background:#7fc540;
+                transition: all .5s ease;
+            }
+        }
+    }
+}
